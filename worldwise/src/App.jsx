@@ -41,11 +41,11 @@ function App() {
         <Route path="/form" element={<Form />} />
         <Route path="/app" element={<AppLayout />}>
           <Route
-            index
+            path="cities"
             element={<CityList cities={cities} isLoading={isLoading} />}
           />
           <Route
-            path="cities"
+            index
             element={<CityList cities={cities} isLoading={isLoading} />}
           />
           <Route path="countries" element={<p>Countries</p>} />

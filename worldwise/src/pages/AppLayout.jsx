@@ -8,12 +8,10 @@ import styles from "./AppLayout.module.css";
 function AppLayout() {
   return (
     <div className={styles.app}>
-      <Sidebar />
       <Map />
-      <div className={styles.mainContent}>
-        <User />
-        <Outlet />
-      </div>
+      <Sidebar />
+      <Outlet />
+      <User />
     </div>
   );
 }
