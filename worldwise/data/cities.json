@@ -1,7 +1,7 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
+      "cityName": "Faro",
       "country": "Portugal",
       "emoji": "🇵🇹",
       "date": "2027-10-31T15:59:59.138Z",
@@ -13,7 +13,7 @@
       "id": 73930385
     },
     {
-      "cityName": "Madrid",
+      "cityName": "Barcelona",
       "country": "Spain",
       "emoji": "🇪🇸",
       "date": "2027-07-15T08:22:53.976Z",
