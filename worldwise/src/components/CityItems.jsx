@@ -1,23 +1,15 @@
 import React from "react";
 import styles from "./CityItems.module.css";
 
-const formatDate = (date) =>
-  new Intl.DateTimeFormat("en", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-    weekday: "long",
-  }).format(new Date(date));
-
-function CityItems({ city }) {
-  const { date, emoji, cityName } = city;
+const CityItems = ({ city }) => {
   return (
     <li className={styles.cityItem}>
-      <span className={styles.emoji}>{emoji}</span>
-      <h3 className={styles.name}>{cityName}</h3>
-      <time className={styles.date}>{formatDate(date)}</time>
-      <button className={styles.deleteBtn}>&times;</button>
+      <span className={styles.emoji}>{city.emoji}</span>
+      <span className={styles.name}>{city.name}</span>
+      <span className={styles.date}>{city.date}</span>
+      <button className={styles.deleteBtn}></button>
     </li>
   );
-}
+};
+
 export default CityItems;
